@@ -1,7 +1,9 @@
 public class MAin {
     public static void main(String[]args){
-        final int n=5;
-        double S=Math.PI*Math.pow(2,n);
-        System.out.println(S);
+        final int w=7;
+        final int h=5;
+        int P=(w+h)*2;
+        System.out.println(P);
+
     }
 }
