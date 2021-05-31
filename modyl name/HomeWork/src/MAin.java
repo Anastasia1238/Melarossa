@@ -1,37 +1,33 @@
 import java.util.Scanner;
 
 public class MAin {
-    public static void main(String[]args){
+    public static void main(String[] args) {
 
-        int weekDay=0;
-        Scanner in=new Scanner(System.in);
-        weekDay=in.nextInt();
+        int day = getTime();
+        if (day >= 6 && day <= 12) {
+            System.out.println("Good morning!:");
 
-        switch (weekDay){
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-            default:
+        } else if (day >= 12 && day <= 16) {
+            System.out.println("Good day!:");
+
+        } else if (day >= 16 && day <= 20) {
+            System.out.println("Good evening!:");
+
+        } else {
+            System.out.println("Good night!");
         }
-        System.out.println("Ваш день недели:"+weekDay);
     }
 
+    public static int getTime() {
+        Scanner in = new Scanner(System.in);
 
+        System.out.println("Введите время:");
+        int time;
+        time = in.nextInt();
+        if (time > 24 | time < 0) {
+            System.out.println("Неверное время:");
+            getTime();
+        }
+        return time;
+    }
 }
