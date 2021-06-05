@@ -1,18 +1,35 @@
 public class Main {
-
     public static void main(String[] args) {
-        Person man = new Person("Рик Санчез", 50);
-        String manFullName = man.getFullName();
-        int manAgg = man.getAgg();
 
-        System.out.println("Полное имя:" + manFullName);
-        System.out.println("Возраст:" + manAgg);
-        System.out.println();
-        man.move();
-        man.talk();
+        Shape shape[] = new Shape[2];
+        shape[0] = new Circle();
+        shape[1] = new Rectangle();
 
+    }
+}
+
+class Shape {
+    int color = 10;
+
+    Shape(){
+    }
+    public void point() {
+        System.out.println("Метод Рисовать:");
+    }
+}
+class Circle extends Shape {
+    int form;
+
+    Circle() {
+        System.out.println("Конструктор Circle");
+    }
+}
+
+class Rectangle extends Shape {
+    int form1;
+
+    Rectangle() {
+        System.out.println("Конструктор Rectangle");
     }
 
 }
-
-
