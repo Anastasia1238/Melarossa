@@ -1,15 +1,18 @@
 public class Main {
+
+
     public static void main(String[] args) {
-        Card cr = new Card();
-        String crName = cr.getName();
-        long crNuber = cr.getNumber();
-        long crBulans = cr.getBalans();
+        int x = 10;
+        float y = 2;
+        double z = x / y;
+        System.out.println(z);
 
-        System.out.println("Имя владельца карты:" + crName);
-        System.out.println("Номеркарты карты:" + crNuber);
-        System.out.println("Баланс счета:" + crBulans);
+        int oct = 10 % 3;
+        System.out.println(oct);
 
+        double c = Math.sqrt(x);
+        System.out.println(c);
     }
-}
 
+}
 
