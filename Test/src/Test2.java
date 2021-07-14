@@ -4,7 +4,7 @@
 //Вывести на экран факториал N, N - введенное с клавиатуры число.
 public class Test2 {
     public static void main(String[] args) {
-        System.out.println(factorial(7));
+        System.out.println(factorial(0));
     }
     public static int factorial(int F){
         int result=1;
@@ -14,7 +14,7 @@ public class Test2 {
         return  result;
     }
     public static int factoriale(int F){
-        if (F<=7){
+        if (F<=0){
             return 1;
         }else {
             return F*factoriale(F-1);
